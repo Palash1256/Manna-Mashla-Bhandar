@@ -1,8 +1,8 @@
 import { Route,Routes } from "react-router-dom"
 import Home from "./Components/Home"
 import UploadData from "./Components/UploadData"
-import Coustomers from "./Components/Coustomers"
 import NavBar from "./Components/NavBar"
+import Customers from "./Components/Customers"
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
       <NavBar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/customers" element={<Coustomers/>}/>
+        <Route path="/customers" element={<Customers/>}/>
         <Route path="/upload" element={<UploadData/>}/>
       </Routes>
     </div>

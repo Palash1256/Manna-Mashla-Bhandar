@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
-function Coustomers() {
+function Customers() {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    fetch(backendUrl + "/customers")
+    fetch(backendUrl + "/customers-data")
       .then((res) => res.json())
       .then((json) => {
         // Sort by Name, then Address (both ascending, case-insensitive)
@@ -120,4 +120,4 @@ function Coustomers() {
   );
 }
 
-export default Coustomers;
+export default Customers;

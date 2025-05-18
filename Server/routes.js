@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
 });
 
 
-router.get('/customers', async (req, res) => {
+router.get('/customers-data', async (req, res) => {
     const sheetId = process.env.SHEET_ID;
     const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json`;
 
