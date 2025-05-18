@@ -10,7 +10,7 @@ function App() {
     <div className="bg-gradient-to-br from-yellow-50 to-orange-100 min-h-screen flex flex-col">
       <NavBar/>
       <Routes>
-        <Route path="/home" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/customers" element={<Customers/>}/>
         <Route path="/upload" element={<UploadData/>}/>
       </Routes>
